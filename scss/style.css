@@ -1,1 +1,83 @@
-:root{--default-black: #363636;--default-white: #ffffff;--title-color: #551a8b;--primary-color: #e1c5fd;--primary-light-color: #e6e6fa;--primary-dark-color: #663399;--disabled-background-color: #d1cfcf;--disabled-color: #a9a9a9;--failure-color: #f44336;--successful-color: #34cb79;--github-color: #322153}*{margin:0;padding:0;box-sizing:border-box}html{font-family:Rubik,sans-serif}body{background-color:#f0f0f5;-webkit-font-smoothing:antialiased}body::-webkit-scrollbar{width:6px}body::-webkit-scrollbar-track{background:#322153}body::-webkit-scrollbar-thumb{background-color:#639;border-radius:20px}a{text-decoration:none;font-style:italic}h1,h2,h3,h4,h5,h6{font-family:Ubuntu,sans-serif}button{cursor:pointer}button:focus{outline:0 auto -webkit-focus-ring-color;outline-offset:0}input[type=number]{outline:0 auto -webkit-focus-ring-color;outline-offset:0}
+:root {
+  --default-black: #363636;
+  --default-white: #ffffff;
+  --ice-white: #f0f0f5;
+  --title-color: #551a8b;
+  --github-color: #322153;
+  --primary: #e0cbfb;
+  --primary-light: #f0eaf2;
+  --primary-medium: #c57af3;
+  --primary-dark: #933de1;
+  --secondary: #60cac8;
+  --secondary-light: #60cac880;
+  --disabled-light: #d1cfcf;
+  --disabled: #a9a9a9;
+  --successful: #34cb79;
+  --alert: #ffcc00;
+  --failure: #f44336;
+  --failure-medium: #cd5c5c;
+  --failure-dark: #cc3300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Asap", sans-serif;
+}
+
+body {
+  background-color: var(--primary-light);
+  -webkit-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  width: 6px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: #322153; /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #663399; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+}
+
+a {
+  text-decoration: none;
+  font-style: italic;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Poppins, sans-serif;
+}
+
+button {
+  font-family: "Asap", sans-serif;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 0 auto -webkit-focus-ring-color;
+  outline-offset: 0;
+}
+
+input[type=number] {
+  font-family: "Asap", sans-serif;
+  outline: 0 auto -webkit-focus-ring-color;
+  outline-offset: 0;
+}
+
+[class*=col-] {
+  /* For extra small devices */
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

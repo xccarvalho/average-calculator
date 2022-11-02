@@ -1,7 +1,6 @@
 # average-calculator
 
-Projeto Média das Notas dos Alunos
+Project to calculate the average of four grades
 
-Esta aplicação foi desenvolvida como atividade pessoal para exercitar os conhecimentos durante o estudo de JavaScript. É uma aplicação que tem como objetivo calcular a média das notas de uma série de alunos. A aplicação teve como base um programa de imersão do Alura!
-
-Além de permitir exercitar a linguagem JavaScript, a construção do aplicativo permitiu, também, praticar HTML5 e CSS3.
+This application was developed as a personal activity to exercise the knowns during the studies about JavaScript.
+This application aims to calculate the average of exam grades of student. In addition I could practice HTML5 and SCSS.

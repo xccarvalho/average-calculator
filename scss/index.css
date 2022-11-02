@@ -1,1 +1,182 @@
-#page-home{border:solid 2px red;height:105vh;display:flex}#page-home .container{border:solid 2px blue;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;width:90%;max-width:1080px;height:100%;max-height:850px;margin:auto}#page-home .container header{margin:6px;color:var(--title-color)}#page-home .container header .logotipo{width:60px}#page-home .container header .logo-title{margin-bottom:6px;line-height:20px}#page-home .container header .slogan{font-size:.67rem}#page-home .container .content{max-width:510px}#page-home .container .content .score-group{min-width:345px;min-height:495px;padding:10px 20px;display:flex;flex-direction:column;align-items:center;border-radius:8px;background-color:#f0f8ff;border:solid 2px var(--primary-dark-color)}#page-home .container .content .score-group legend{padding:0 4px;font-size:.8rem;text-align:center;color:var(--primary-dark-color)}#page-home .container .content .score-group input[type=number]{width:200px;height:50px;margin:10px;padding:15px;border-radius:6px;text-align:center;color:var(--primary-dark-color);background-color:var(--default-white);border:solid 1px var(--primary-dark-color)}#page-home .container .content .score-group input[type=number]::-moz-placeholder{color:var(--disabled-color)}#page-home .container .content .score-group input[type=number]:-ms-input-placeholder{color:var(--disabled-color)}#page-home .container .content .score-group input[type=number]::placeholder{color:var(--disabled-color)}#page-home .container .content .score-group input[type=number]:focus{background-color:var(--primary-light-color);border:solid 1px var(--primary-dark-color)}#page-home .container .content .score-group button{margin:6px;border:none;width:200px;height:40px;padding:15px;line-height:0;font-size:1rem;font-weight:600;border-radius:6px;text-align:center}#page-home .container .content .score-group button.discover{border:solid 1.5px var(--primary-dark-color);background-color:var(--primary-color);color:var(--primary-dark-color)}#page-home .container .content .score-group button.reset{color:var(--failure-color);background-color:#f0f8ff;border:solid 1.5px var(--failure-color)}#page-home .container .content .score-group button.reset:hover{transition:800ms;background-color:#ffbab5}#page-home .container .content .score-group button:disabled{cursor:not-allowed;color:var(--disabled-color);background-color:var(--disabled-background-color);border:solid 1.5px var(--disabled-background-color)}#page-home .container .content .score-group button:focus{color:var(--default-white);background-color:var(--title-color)}#page-home .container .content .score-group label{margin:10px;width:300px;display:flex;padding:12px;min-height:75px;font-size:.9rem;border-radius:6px;align-items:center;justify-content:center;color:var(--primary-dark-color);background-color:var(--default-white);border:solid 2px var(--primary-dark-color)}#page-home .container .content .score-group label .approved{color:var(--successful-color);border:solid 2px var(--successful-color)}#page-home .container .content .score-group label .disapproved{color:var(--failure-color);border:solid 2px var(--failure-color)}#page-home .container footer{display:flex;flex-direction:column;align-items:center;padding:1rem 0;font-size:.8rem}#page-home .container footer p{color:var(--default-black)}#page-home .container footer p a{color:var(--github-color)}
+#home-page {
+  height: 100vh;
+  display: flex;
+}
+#home-page main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#home-page main .header {
+  margin: 10px;
+  color: var(--primary-dark);
+}
+#home-page main .header .logotype {
+  border-radius: 100%;
+  width: 98px;
+  padding: 7px;
+  background: linear-gradient(var(--primary-light), var(--primary-light)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--secondary), var(--primary-dark)) border-box;
+  border: 3px solid transparent;
+}
+#home-page main .header .logo-title {
+  /* To use gradient for font color */
+  background: linear-gradient(to left, var(--primary-dark) 12%, var(--secondary) 100%, var(--primary-medium) 88%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#home-page main .header .slogan {
+  font-size: 0.67rem;
+}
+#home-page main .content {
+  width: 100%;
+}
+#home-page main .content .form-group {
+  min-height: 495px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+}
+#home-page main .content .form-group legend {
+  margin-bottom: 12px;
+  text-align: center;
+  color: var(--primary-dark);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+#home-page main .content .form-group input[type=number] {
+  width: 90%;
+  min-width: 245px;
+  height: 66px;
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  border-radius: 20px;
+  border: none;
+}
+#home-page main .content .form-group input[type=number]::-moz-placeholder {
+  color: var(--secondary-light);
+}
+#home-page main .content .form-group input[type=number]:-ms-input-placeholder {
+  color: var(--secondary-light);
+}
+#home-page main .content .form-group input[type=number]::placeholder {
+  color: var(--secondary-light);
+}
+#home-page main .content .form-group input[type=number]:focus {
+  /* To use gradient on border and border-radius it's necessary make with background
+  Site ex: https://nikitahl.com/gradient-border-css */
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--secondary)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group input[type=number]:not(:-moz-placeholder-shown) {
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--primary-dark)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group input[type=number]:not(:-ms-input-placeholder) {
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--primary-dark)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group input[type=number]:not(:placeholder-shown) {
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--primary-dark)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group input[type=number]:invalid {
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--failure), var(--failure-dark)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group .actions {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+#home-page main .content .form-group button {
+  margin: 6px;
+  border: none;
+  width: 102px;
+  height: 50px;
+  padding: 15px;
+  line-height: 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 20px;
+  text-align: center;
+  background-color: var(--primary-light);
+}
+#home-page main .content .form-group button.calculate {
+  transition: 400ms;
+  color: var(--primary-dark);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--primary-dark)) border-box;
+  border: 1.5px solid transparent;
+}
+#home-page main .content .form-group button.reset {
+  color: var(--failure-medium);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--failure), var(--failure-medium)) border-box;
+  border: 1.5px solid transparent;
+}
+#home-page main .content .form-group button:disabled {
+  cursor: not-allowed;
+  color: var(--disabled);
+  background: linear-gradient(-3deg, var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--disabled-light), var(--disabled)) border-box;
+  border: 1.5px solid transparent;
+}
+#home-page main .content .form-group label {
+  margin: 10px;
+  width: 245px;
+  display: flex;
+  padding: 12px;
+  min-height: 75px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+}
+#home-page main .content .form-group label.resultAverage {
+  color: var(--secondary-light);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--primary-medium), var(--secondary)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group label.isApproved {
+  color: var(--successful);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--secondary), var(--successful)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group label.isAlert {
+  color: var(--alert);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--alert), var(--failure)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .content .form-group label.isDisapproved {
+  color: var(--failure);
+  background: linear-gradient(var(--default-white), var(--default-white)) padding-box, linear-gradient(45deg, var(--failure), var(--failure-dark)) border-box;
+  border: 2px solid transparent;
+}
+#home-page main .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 0.8rem;
+}
+#home-page main .footer p {
+  color: var(--title-color);
+}
+#home-page main .footer p a {
+  font-weight: 600;
+  color: var(--github-color);
+}
+#home-page aside {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#home-page aside img {
+  width: 70%;
+  height: 70%;
+}/*# sourceMappingURL=index.css.map */

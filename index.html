@@ -1,106 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" type="text/css" href="/scss/style.css" />
-		<link rel="stylesheet" type="text/css" href="/scss/index.css" />
-		<script type="text/javascript" defer src="/js/index.js"></script>
-		<title>Average Calc</title>
-	</head>
-
-	<body>
-		<div id="page-home">
-			<div class="aside">
-				<img
-					src="./assets/img/report-card.jpg"
-					alt="logotipo"
-					class="logotipo"
-				/>
-				<!-- <h1 class="logo-title">AverageCALC</h1> -->
-			</div>
-			<div class="container">
-				<header>
-					<img src="./assets/img/asp.png" alt="logotipo" class="logotipo" />
-					<h3 class="logo-title">AverageCALC</h3>
-				</header>
-				<main class="content">
-					<form method="get">
-						<fieldset class="score-group">
-							<legend>DISCOVER THE AVERAGE SCORE OF YOUR TESTS</legend>
-							<input
-								type="number"
-								class="average1"
-								min="0"
-								max="10"
-								maxlength="3"
-								step="0.01"
-								placeholder="1° score"
-								id="a1"
-								name="a1"
-							/>
-							<input
-								type="number"
-								class="average2"
-								min="0"
-								max="10"
-								maxlength="3"
-								step="0.01"
-								placeholder="2° score"
-								id="a2"
-								name="a2"
-							/>
-							<input
-								type="number"
-								class="average3"
-								min="0"
-								max="10"
-								maxlength="3"
-								step="0.01"
-								placeholder="3° score"
-								id="a3"
-								name="a3"
-							/>
-							<input
-								type="number"
-								class="average4"
-								min="0"
-								max="10"
-								maxlength="3"
-								step="0.01"
-								placeholder="4° score"
-								id="a4"
-								name="a4"
-							/>
-							<button
-								class="discover js-theme"
-								disabled="disabled"
-								onclick="showAverage()"
-							>
-								DISCOVER
-							</button>
-							<button class="reset" onclick="reset()">RESET</button>
-
-							<label type="text" id="resultAverage" class="isApproved">
-								AVERAGE SCORE RESULT
-							</label>
-						</fieldset>
-					</form>
-				</main>
-				<footer>
-					<p><em>Developed by Caroll Carvalho</em></p>
-					<p>
-						click to see my code
-						<a
-							href="https://github.com/xccarvalho/average-calculator"
-							target="blank"
-						>
-							<strong>github @xccarvalho</strong>
-						</a>
-					</p>
-				</footer>
-			</div>
-		</div>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="/scss/style.css" />
+    <link rel="stylesheet" type="text/css" href="/scss/index.css" />
+    <link rel="stylesheet" type="text/css" href="/scss/responsiveness.css" />
+    <script type="text/javascript" defer src="/js/index.js"></script>
+    <title>Average Calc</title>
+  </head>
+  <body>
+    <div id="home-page">
+      <main class="col-s-12 col-m-7 col-l-5 col-xl-6">
+        <div class="header">
+          <img
+            src="./assets/img/logotype.png"
+            alt="logotype"
+            class="logotype"
+          />
+          <h3 class="logo-title">AverageCALC</h3>
+        </div>
+        <div class="content">
+          <form class="form-group">
+            <legend>CALCULATE THE AVERAGE OF YOUR TEST SCORES</legend>
+            <input
+              type="number"
+              class="average1"
+              min="0"
+              max="10"
+              maxlength="3"
+              step="0.01"
+              placeholder="1° score"
+              id="a1"
+              name="a1"
+            />
+            <input
+              type="number"
+              class="average2"
+              min="0"
+              max="10"
+              maxlength="3"
+              step="0.01"
+              placeholder="2° score"
+              id="a2"
+              name="a2"
+            />
+            <input
+              type="number"
+              class="average3"
+              min="0"
+              max="10"
+              maxlength="3"
+              step="0.01"
+              placeholder="3° score"
+              id="a3"
+              name="a3"
+            />
+            <input
+              type="number"
+              class="average4"
+              min="0"
+              max="10"
+              maxlength="3"
+              step="0.01"
+              placeholder="4° score"
+              id="a4"
+              name="a4"
+            />
+            <div class="actions">
+              <button
+                id="btnCalculate"
+                class="calculate"
+                disabled="disabled"
+                onclick="showAverage()"
+              >
+                Calculate
+              </button>
+              <button class="reset" onclick="reset()">Reset</button>
+            </div>
+            <label type="text" id="resultAverage" class="resultAverage">
+              AVERAGE SCORE RESULT
+            </label>
+          </form>
+        </div>
+        <div class="footer">
+          <p><em>Developed by Caroll Carvalho</em></p>
+          <p>
+            click to see my code
+            <a
+              href="https://github.com/xccarvalho/average-calculator"
+              target="blank"
+            >
+              on github @xccarvalho
+            </a>
+          </p>
+        </div>
+      </main>
+      <aside class="col-s-0 col-m-5 col-l-7 col-xl-6">
+        <img src="./assets/img/exam.png" />
+      </aside>
+    </div>
+  </body>
 </html>

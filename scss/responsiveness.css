@@ -1,0 +1,228 @@
+@media only screen and (min-width: 425px) {
+  /* For mobile and up */
+  .col-s-0 {
+    width: 0;
+  }
+  .col-s-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* For tablets and up*/
+  .col-m-1 {
+    width: 8.33%;
+  }
+  .col-m-2 {
+    width: 16.66%;
+  }
+  .col-m-3 {
+    width: 25%;
+  }
+  .col-m-4 {
+    width: 33.33%;
+  }
+  .col-m-5 {
+    width: 41.66%;
+  }
+  .col-m-6 {
+    width: 50%;
+  }
+  .col-m-7 {
+    width: 58.33%;
+  }
+  .col-m-8 {
+    width: 66.66%;
+  }
+  .col-m-9 {
+    width: 75%;
+  }
+  .col-m-10 {
+    width: 83.33%;
+  }
+  .col-m-11 {
+    width: 91.66%;
+  }
+  .col-m-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  /* For desktop and up */
+  .col-l-1 {
+    width: 8.33%;
+  }
+  .col-l-2 {
+    width: 16.66%;
+  }
+  .col-l-3 {
+    width: 25%;
+  }
+  .col-l-4 {
+    width: 33.33%;
+  }
+  .col-l-5 {
+    width: 41.66%;
+  }
+  .col-l-6 {
+    width: 50%;
+  }
+  .col-l-7 {
+    width: 58.33%;
+  }
+  .col-l-8 {
+    width: 66.66%;
+  }
+  .col-l-9 {
+    width: 75%;
+  }
+  .col-l-10 {
+    width: 83.33%;
+  }
+  .col-l-11 {
+    width: 91.66%;
+  }
+  .col-l-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* For desktop ultra wide and up */
+  .col-xl-1 {
+    width: 8.33%;
+  }
+  .col-xl-2 {
+    width: 16.66%;
+  }
+  .col-xl-3 {
+    width: 25%;
+  }
+  .col-xl-4 {
+    width: 33.33%;
+  }
+  .col-xl-5 {
+    width: 41.66%;
+  }
+  .col-xl-6 {
+    width: 50%;
+  }
+  .col-xl-7 {
+    width: 58.33%;
+  }
+  .col-xl-8 {
+    width: 66.66%;
+  }
+  .col-xl-9 {
+    width: 75%;
+  }
+  .col-xl-10 {
+    width: 83.33%;
+  }
+  .col-xl-11 {
+    width: 91.66%;
+  }
+  .col-xl-12 {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 425px) {
+  /* For mobile and up */
+  #home-page main .content .form-group button {
+    width: 130px;
+  }
+  #home-page main .content .form-group label {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 769px) {
+  /* For tablets and up*/
+  #home-page main .content .form-group {
+    min-width: 355px;
+  }
+  #home-page main .content .form-group button {
+    width: 150px;
+  }
+  #home-page main .content .form-group label {
+    width: 350px;
+  }
+  #home-page aside {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  /* For desktop and up */
+  #home-page main .header .logotype {
+    width: 120px;
+  }
+  #home-page main .content .form-group {
+    min-width: 355px;
+  }
+  #home-page main .content .form-group legend {
+    font-size: 1rem;
+  }
+  #home-page main .content .form-group input[type=number] {
+    min-width: 345px;
+    max-width: 600px;
+    height: 72px;
+    font-size: 1.3rem;
+  }
+  #home-page main .content .form-group button {
+    width: 250px;
+    height: 60px;
+  }
+  #home-page main .content .form-group label {
+    width: 545px;
+    font-size: 1rem;
+    min-height: 90px;
+  }
+  #home-page main .footer {
+    font-size: 1.1rem;
+  }
+  #home-page aside {
+    display: flex;
+  }
+}
+@media only screen and (min-width: 2560px) {
+  /* For desktop 4k ultra wide and up */
+  #home-page main .header .logotype {
+    width: 230px;
+    padding: 20px;
+    border: 5px solid transparent;
+  }
+  #home-page main .header .logo-title {
+    font-size: 3rem;
+  }
+  #home-page main .content .form-group {
+    min-width: 355px;
+    padding: 44px 20px;
+  }
+  #home-page main .content .form-group legend {
+    font-size: 2rem;
+    margin-bottom: 26px;
+  }
+  #home-page main .content .form-group input[type=number] {
+    height: 156px;
+    font-size: 2.3rem;
+    border-radius: 40px;
+    margin: 16px;
+  }
+  #home-page main .content .form-group button {
+    width: 450px;
+    height: 100px;
+    font-size: 2rem;
+    border-radius: 30px;
+    margin: 16px 8px;
+  }
+  #home-page main .content .form-group label {
+    width: 950px;
+    font-size: 2rem;
+    min-height: 165px;
+    border-radius: 20px;
+    margin: 30px;
+  }
+  #home-page main .footer {
+    font-size: 2.1rem;
+  }
+  #home-page aside {
+    display: flex;
+  }
+}/*# sourceMappingURL=responsiveness.css.map */

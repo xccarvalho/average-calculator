@@ -1,147 +1,247 @@
-#page-home {
-	border: solid 2px red;
-	height: 105vh;
-	display: flex;
-	.container {
-		border: solid 2px blue;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		text-align: center;
-		width: 90%;
-		max-width: 1080px;
-		height: 100%;
-		max-height: 850px;
-		margin: auto;
-		header {
-			margin: 6px;
-			color: var(--title-color);
-			.logotipo {
-				width: 60px;
-			}
-			.logo-title {
-				margin-bottom: 6px;
-				line-height: 20px;
-			}
-			.slogan {
-				font-size: 0.67rem;
-			}
-		}
-		.content {
-			// display: flex;
-			// flex-direction: column;
-			// align-items: center;
-			max-width: 510px;
-			.score-group {
-				min-width: 345px;
-				min-height: 495px;
-				padding: 10px 20px;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				border-radius: 8px;
-				background-color: aliceblue;
-				// justify-content: space-around;
-				border: solid 2px var(--primary-dark-color);
-				legend {
-					padding: 0 4px;
-					font-size: 0.8rem;
-					text-align: center;
-					color: var(--primary-dark-color);
-				}
-				input[type="number"] {
-					width: 200px;
-					height: 50px;
-					margin: 10px;
-					padding: 15px;
-					border-radius: 6px;
-					text-align: center;
-					color: var(--primary-dark-color);
-					background-color: var(--default-white);
-					border: solid 1px var(--primary-dark-color);
-					&::placeholder {
-						color: var(--disabled-color);
-					}
-					&:focus {
-						background-color: var(--primary-light-color);
-						border: solid 1px var(--primary-dark-color);
-					}
-				}
-				button {
-					margin: 6px;
-					border: none;
-					width: 200px;
-					height: 40px;
-					padding: 15px;
-					line-height: 0;
-					font-size: 1rem;
-					font-weight: 600;
-					border-radius: 6px;
-					text-align: center;
-					&.discover {
-						border: solid 1.5px var(--primary-dark-color);
-						background-color: var(--primary-color);
-						color: var(--primary-dark-color);
-					}
-					&.reset {
-						color: var(--failure-color);
-						background-color: #f0f8ff;
-						border: solid 1.5px var(--failure-color);
-						&:hover {
-							transition: 800ms;
-							// color: var(--default-white);
-							background-color: #ffbab5;
-							// background-color: var(--failure-color);
-						}
-					}
-					&:disabled {
-						cursor: not-allowed;
-						color: var(--disabled-color);
-						background-color: var(--disabled-background-color);
-						border: solid 1.5px var(--disabled-background-color);
-					}
-					&:focus {
-						color: var(--default-white);
-						background-color: var(--title-color);
-					}
-				}
-				label {
-					margin: 10px;
-					width: 300px;
-					display: flex;
-					padding: 12px;
-					min-height: 75px;
-					font-size: 0.9rem;
-					border-radius: 6px;
-					align-items: center;
-					justify-content: center;
-					color: var(--primary-dark-color);
-					background-color: var(--default-white);
-					border: solid 2px var(--primary-dark-color);
-					.approved {
-						color: var(--successful-color);
-						border: solid 2px var(--successful-color);
-					}
-					.disapproved {
-						color: var(--failure-color);
-						border: solid 2px var(--failure-color);
-					}
-				}
-			}
-		}
-		footer {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			padding: 1rem 0;
-			font-size: 0.8rem;
-			p {
-				color: var(--default-black);
-				a {
-					color: var(--github-color);
-				}
-			}
-		}
-	}
+#home-page {
+  height: 100vh;
+  display: flex;
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    .header {
+      margin: 10px;
+      color: var(--primary-dark);
+      .logotype {
+        border-radius: 100%;
+        width: 98px;
+        padding: 7px;
+        background: linear-gradient(var(--primary-light), var(--primary-light))
+            padding-box,
+          linear-gradient(
+              45deg,
+              var(--primary-medium),
+              var(--secondary),
+              var(--primary-dark)
+            )
+            border-box;
+        border: 3px solid transparent;
+      }
+      .logo-title {
+        /* To use gradient for font color */
+        background: linear-gradient(
+          to left,
+          var(--primary-dark) 12%,
+          var(--secondary) 100%,
+          var(--primary-medium) 88%
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .slogan {
+        font-size: 0.67rem;
+      }
+    }
+    .content {
+      width: 100%;
+      .form-group {
+        min-height: 495px;
+        padding: 10px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: none;
+        legend {
+          margin-bottom: 12px;
+          text-align: center;
+          color: var(--primary-dark);
+          font-size: 0.8rem;
+          font-weight: 500;
+        }
+        input[type="number"] {
+          width: 90%;
+          min-width: 245px;
+          height: 66px;
+          margin: 10px;
+          padding: 15px;
+          text-align: center;
+          font-size: 1.1rem;
+          color: var(--primary-dark);
+          border-radius: 20px;
+          border: none;
+          &::placeholder {
+            color: var(--secondary-light);
+          }
+          // Border while user is putting the score
+          &:focus {
+            // To use gradient on border with border-image, but when you use it, you can not use border-radius
+            // border-image: linear-gradient(45deg, var(--primary-medium), var(--secondary)) 1;
+
+            /* To use gradient on border and border-radius it's necessary make with background
+            Site ex: https://nikitahl.com/gradient-border-css */
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--primary-medium), var(--secondary))
+                border-box;
+            border: 2px solid transparent;
+          }
+          // Border after put correct score
+          &:not(:placeholder-shown) {
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--primary-medium), var(--primary-dark))
+                border-box;
+            border: 2px solid transparent;
+          }
+          // If user try to put invalid score
+          &:invalid {
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--failure), var(--failure-dark))
+                border-box;
+            border: 2px solid transparent;
+          }
+        }
+        .actions {
+          display: flex;
+          align-content: center;
+          justify-content: space-around;
+          align-items: center;
+        }
+        button {
+          margin: 6px;
+          border: none;
+          width: 102px;
+          height: 50px;
+          padding: 15px;
+          line-height: 0;
+          font-size: 1rem;
+          font-weight: 600;
+          border-radius: 20px;
+          text-align: center;
+          background-color: var(--primary-light);
+          &.calculate {
+            transition: 400ms;
+            color: var(--primary-dark);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--primary-medium), var(--primary-dark))
+                border-box;
+            border: 1.5px solid transparent;
+          }
+          &.reset {
+            color: var(--failure-medium);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--failure), var(--failure-medium))
+                border-box;
+            border: 1.5px solid transparent;
+          }
+          &:disabled {
+            cursor: not-allowed;
+            color: var(--disabled);
+            background: linear-gradient(
+                  -3deg,
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--disabled-light), var(--disabled))
+                border-box;
+            border: 1.5px solid transparent;
+          }
+        }
+        label {
+          margin: 10px;
+          width: 245px;
+          display: flex;
+          padding: 12px;
+          min-height: 75px;
+          font-size: 0.9rem;
+          border-radius: 6px;
+          align-items: center;
+          justify-content: center;
+          &.resultAverage {
+            color: var(--secondary-light);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--primary-medium), var(--secondary))
+                border-box;
+            border: 2px solid transparent;
+          }
+          &.isApproved {
+            color: var(--successful);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--secondary), var(--successful))
+                border-box;
+            border: 2px solid transparent;
+          }
+          &.isAlert {
+            color: var(--alert);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--alert), var(--failure)) border-box;
+            border: 2px solid transparent;
+          }
+          &.isDisapproved {
+            color: var(--failure);
+            background: linear-gradient(
+                  var(--default-white),
+                  var(--default-white)
+                )
+                padding-box,
+              linear-gradient(45deg, var(--failure), var(--failure-dark))
+                border-box;
+            border: 2px solid transparent;
+          }
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      font-size: 0.8rem;
+      p {
+        color: var(--title-color);
+        a {
+          font-weight: 600;
+          color: var(--github-color);
+        }
+      }
+    }
+  }
+  aside {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    img {
+      width: 70%;
+      height: 70%;
+    }
+  }
 }
